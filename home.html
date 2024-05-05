@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/stle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wraper">
+      <div class="cart">
+        <div class="header"><p>Password Generator</p></div>
+        <div class="strengthen">
+          <p>PTx1f5DaFX</p>
+          <img src="./img/regulyar_copy.svg" alt="" />
+        </div>
+        <div class="main">
+          <div class="caracter_length">
+            <p>Character Length</p>
+            <span class="number">10</span>
+          </div>
+          <input
+            type="range"
+            class="slider"
+            min="1"
+            max="20"
+            value="10"
+            step="1"
+          />
+          <div class="main_checkboxs">
+            <input
+              type="checkbox"
+              class="checkbox"
+              onclick="changeColor()"
+              id="checkbox1"
+            />
+            <p>Include Uppercase Letters</p>
+            <input
+              type="checkbox"
+              class="checkbox"
+              onclick="changeColor()"
+              id="checkbox2"
+            />
+            <p>Include Lowercase Letters</p>
+            <input
+              type="checkbox"
+              class="checkbox"
+              onclick="changeColor()"
+              id="checkbox3"
+            />
+            <p>Include Numbers</p>
+            <input
+              type="checkbox"
+              class="checkbox"
+              onclick="changeColor()"
+              id="checkbox4"
+            />
+            <p>Include Symbols</p>
+          </div>
+          <div class="strength_medium">
+            <p>STRENGTH</p>
+            <h2>MEDIUM</h2>
+            <div class="container">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+          <button>GENERATE</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
